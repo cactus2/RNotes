@@ -65,7 +65,7 @@ msf4 <- function(x, y = 2){
 	summapower <- function(p, q){
 		pwr <- p ^ q
 		randomjunk <<- q # This time randomjunk can't escape because by now there is 
-						 # a (NULL) object with that name in summapower's environment
+					# a (NULL) object with that name in summapower's parent environment
 		return(pwr)
 		}
 	powr <- summapower(summa, y)
